@@ -1,22 +1,23 @@
-/* We need to import these files */
-@import "../bootstrap/bootstrap.css.less";
-@import "../bootstrap/bootstrap-responsive.css.less";
+/* We need to import these files, so not include them elsewhere, eg. yii-bootstrap oder layouts/main.php */
+@import "../vendor/bootstrap/less/bootstrap.less";
+@import "../vendor/bootstrap/less/responsive.less";
 
+/* TODO: add all spans, and much more */
 #content {
     /*.row;
     .span12;*/
 }
 
 .span-24 {
-    .span12;
+    //.span12;
 }
 
 .span-18 {
-    .span9;
+    //.span9;
 }
 
 .span-12 {
-    .span6;
+    //.span6;
 }
 
 /* hotfix */
@@ -49,22 +50,23 @@ div.form {
     .well;
 }
 div.form .row {
+    .form-horizontal
     .control-group;
     margin-left: 0px;
 }
 div.form .row LABEL {
-    .form-horizontal .control-label;
+    //.form-horizontal .control-label;
 }
 div.form .row INPUT,
 div.form .row SELECT,
 div.form .row TEXTAREA,
 div.form .row .hint{
-    .form-horizontal .controls;
+    //.form-horizontal .controls;
 }
 div.form .row INPUT,
 div.form .row SELECT,
 div.form .row TEXTAREA {
-    margin-left: 20px;
+    //margin-left: 20px;
 }
 div.form BUTTON,
 div.form INPUT[type="button"],
@@ -74,66 +76,3 @@ div.form INPUT[type="submit"] {
 div.form INPUT[type="submit"] {
     .btn-primary;
 }
-
-
-
-
-
-
-
-
-
-
-img.pull-left, img.pull-right {
-    padding: 4px;
-}
-
-
-
-.container hr {
-  clear: both;
-}
-
-
-
-.je-node INPUT {
-    width: 30%;
-}
-
-/* iPhone Hacks */
-@media (max-width: 480px) {
-    .cke_dialog {
-	zoom: 0.5;
-    }
-
-    div.form .row LABEL,
-    div.form .row INPUT,
-    div.form .row SELECT,
-    div.form .row TEXTAREA,
-    div.form .row .hint, {
-	text-align: left;
-	margin-left: 0px;
-    }
-} 
-
-
-html {
-    overflow-y: scroll;
-}
-
-
-
-.ckeditor LI {
-    height: 180px;
-
-}
-
-#p3-media-grid IMG.ckeditor {
-    height: auto;
-    width: 150px;
-    max-width: 150px;
-    max-height: 120px;
-}
-
-
-
